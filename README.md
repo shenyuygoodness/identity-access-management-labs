@@ -27,26 +27,24 @@ This project includes **Lab 1 to Lab 12**:
 This lab demonstrates how to create users and assign different levels of administrative (sudo) privileges using the /etc/sudoers file.
 
 * Created three users(lionel, katelyn, and maggie) were created using the useradd command. Passwords were assigned using the passwd command to enable login.
-![Screenshot1](<img width="818" height="920" alt="Screenshot 2026-03-27 233120" src="https://github.com/user-attachments/assets/81562024-7515-4aaf-b1ec-3840cf662bff" />
-)
+![screenshot1](<img width="818" height="920" alt="Screenshot 2026-03-27 233120" src="https://github.com/user-attachments/assets/81562024-7515-4aaf-b1ec-3840cf662bff" />)
+
 * Configured `/etc/sudoers` using `visudo`
    The STORAGE alias was enabled by uncommenting it.
    Specific privileges were assigned:
 lionel: Full administrative privileges.
 katelyn: Limited to checking SSH service status.
 maggie: Granted permissions defined under the STORAGE alias.
-  ![screenshot2](<img width="944" height="942" alt="Screenshot 2026-03-27 233636" src="https://github.com/user-attachments/assets/af7e114c-7e6f-4df2-90d6-fb702a5d5f1c" />
-)
+  ![screenshot2](<img width="944" height="942" alt="Screenshot 2026-03-27 233636" src="https://github.com/user-attachments/assets/af7e114c-7e6f-4df2-90d6-fb702a5d5f1c" />)
+  
 * Implemented role-based access control(Testing users capabilites on the system)
 Lionel
-![screentshot3](<img width="870" height="953" alt="Screenshot 2026-03-27 234357" src="https://github.com/user-attachments/assets/18451d84-8fda-4426-aa6c-cad1c883a84b" />
-)
+![screentshot3](<img width="870" height="953" alt="Screenshot 2026-03-27 234357" src="https://github.com/user-attachments/assets/18451d84-8fda-4426-aa6c-cad1c883a84b" />)
 Katelyn
-![screenshot4](<img width="662" height="661" alt="Screenshot 2026-03-27 234856" src="https://github.com/user-attachments/assets/f2889e05-bfdf-42e6-adb9-0d35a88e77cb" />
-)
+![screenshot4](<img width="662" height="661" alt="Screenshot 2026-03-27 234856" src="https://github.com/user-attachments/assets/f2889e05-bfdf-42e6-adb9-0d35a88e77cb" />)
 Maggie
-![screenshot](<img width="709" height="694" alt="Screenshot 2026-03-27 235913" src="https://github.com/user-attachments/assets/8c0efc89-a410-4e18-be72-11f1316a5bb0" />
-)
+![screenshot5](<img width="709" height="694" alt="Screenshot 2026-03-27 235913" src="https://github.com/user-attachments/assets/8c0efc89-a410-4e18-be72-11f1316a5bb0" />)
+
 ---
 
 ### 🔹 Lab 2: Disabling the Sudo Timer
@@ -54,20 +52,19 @@ Maggie
 This lab demonstrates how to control sudo session timeout behavior.
 After entering the password once, multiple sudo commands were executed without re-authentication.
 
-![screenshot](<img width="682" height="631" alt="Screenshot 2026-03-28 000743" src="https://github.com/user-attachments/assets/e4a11d12-89db-413b-81d5-fcb7631b85db" />
-)
+![screenshot6](<img width="682" height="631" alt="Screenshot 2026-03-28 000743" src="https://github.com/user-attachments/assets/e4a11d12-89db-413b-81d5-fcb7631b85db" />)
 
 * Used `sudo -k` to reset authentication. The system required the password again which confirms timer reset.
 
-![screenshot](<img width="597" height="598" alt="Screenshot 2026-03-28 000927" src="https://github.com/user-attachments/assets/bcea5349-e6a8-4b9f-a554-5d67c358a27c" />
+![screenshot7](<img width="597" height="598" alt="Screenshot 2026-03-28 000927" src="https://github.com/user-attachments/assets/bcea5349-e6a8-4b9f-a554-5d67c358a27c" />
 )
 * Configured `timestamp_timeout` in sudoers
 * Applied user-specific timeout policies `Defaults:lionel timestamp_timeout = 0` Only lionel is affected; other users retained default behavior.
 
-![screenshot](<img width="706" height="96" alt="image" src="https://github.com/user-attachments/assets/f08f2bd5-034a-4362-ad9d-2622d37e1fcc" />
+![screenshot8](<img width="706" height="96" alt="image" src="https://github.com/user-attachments/assets/f08f2bd5-034a-4362-ad9d-2622d37e1fcc" />
 )  
 
-![screenshot](<img width="707" height="578" alt="image" src="https://github.com/user-attachments/assets/572fc6df-161f-45c4-b2d6-7ea65a187658" />
+![screenshot9](<img width="707" height="578" alt="image" src="https://github.com/user-attachments/assets/572fc6df-161f-45c4-b2d6-7ea65a187658" />
 )
 
 ---
